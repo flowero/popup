@@ -3,8 +3,29 @@
  **/
  .h-popover-close{float: right; background:transparent; border: none;}
  .mui-popover button:enabled:active{background: transparent; border:none; color: #333;}
- 
- 
+.mui-popover text{background: transparent; border:none; color: #333;}
+.code-close {
+    display: inline-block;
+    position: absolute;
+    top: .53333rem;
+    right: .53333rem;
+    width: 25px;
+    height: 25px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuBAMAAACllzYEAAAAG1BMVEUAAACcnJycnJycnJycnJybm5ucnJycnJybm5vzd+FVAAAACHRSTlMAnbGVdBfOMQgbVSkAAACeSURBVDjLlZTLCYRAEAV32QTcmyEYhkePxmIGIsiE7dCXAp91cMCZ7qaen/74eVxrv7Y5wr+zb9Me8bF1wdKGW/jbjtr3wAcOVgc5E8cAx0ocEwg7cByQFEDgJo4PjiBwBIFXCPwmKDwF/8JT0ApPAbjH/T7+XH9P/y7yYHnTPFtdtI5Wd+0T6yvtQ+tb7XObC50jmTudU5tr+w+8XReaA0b1JZ3SQwAAAABJRU5ErkJggg==) 50% no-repeat;
+        background-size: auto;
+    background-size: 25px auto;
+}
+ /**div-line container**/
+ .g-imgs {display: flex; justify-content: center;}
+ .g-imgs .img{flex-direction: column;margin-right: 20px;align-items: center;width: 120px; text-align: center;}
+ .g-imgs .img img{width: 120px;}
+ .g-imgs .img i {
+     font-style: normal;
+/*     font-size: .37333rem; */
+     color: #333;
+/*     line-height: .6rem; */
+ }
+
  
 /*** popover bottom arrow height set up. fixed by Ruby ***/
 .mui-popover .mui-popover-arrow {
@@ -13,17 +34,11 @@
     top: -25px;
     left: 0;
     overflow: hidden;
-    width: 26px;
+    width: 0 !important;
     height: 0 !important;
 }
-.mui-table-view-cell{border-radius: 10px;}
+/**mui-arrow去除弹框下面的padding**/
 
-ul{background-color: transparent;}
-/* 去除ul框 的阴影边框角 */
-.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-}
 
 .follow: {position: absolute; top:20px;float: right;    color: darkorange;}
 .follow-container{height: 70px;}
