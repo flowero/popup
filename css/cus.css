@@ -1,0 +1,105 @@
+/**
+ *mui popover close button cus style set up. added by @Ruby on 8/26/2019. 
+ **/
+ .h-popover-close{float: right; background:transparent; border: none;}
+ .mui-popover button:enabled:active{background: transparent; border:none; color: #333;}
+ 
+ 
+ 
+/*** popover bottom arrow height set up. fixed by Ruby ***/
+.mui-popover .mui-popover-arrow {
+    position: absolute;
+    z-index: 1000;
+    top: -25px;
+    left: 0;
+    overflow: hidden;
+    width: 26px;
+    height: 0 !important;
+}
+.mui-table-view-cell{border-radius: 10px;}
+
+ul{background-color: transparent;}
+/* 去除ul框 的阴影边框角 */
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.follow: {position: absolute; top:20px;float: right;    color: darkorange;}
+.follow-container{height: 70px;}
+.follow-container button{float: right; top: 30%;}
+.div-inline{display: inline;}
+
+.mui-btn-grey {
+    color: darkorange;
+    border: 1px solid darkorange;
+    background-color: transparent;
+	right: 6%;
+	border-radius: 26px;
+}
+.mui-btn-grey.mui-active:enabled, .mui-btn-grey:enabled:active {
+    color: darkorange;
+    border: 1px solid darkorange;
+    background-color: transparent;
+}
+
+/**** 解决弹窗闪现的误差效果 08-26-2019 ***/
+.mui-popover {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 280px;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+        transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(0,0,.25,1) 80ms;
+    transition: transform .3s cubic-bezier(0,0,.25,1) 80ms;
+    transform: translate3d(0,0,0);
+    opacity: 0;
+    border-radius: 0;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.1);
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+	left: 0px;
+}
+.mui-active{left: 0px !important;}
+
+		#div{
+			width: 0px;
+			height: 0px;
+			background: red;
+			position: fixed;
+			bottom: 0%;
+			width: 100%;
+		}
+		/*移除底部或顶部三角,需要在删除此代码*/
+		.mui-popover .mui-popover-arrow:after {
+			width: 0px;
+		}
+#popover{left: 0px;}
+
+	/*这里的样式是为第一个行的单选框写的,其他的换行的不用*/
+	  .radio_inline{
+	        display: inline-block;
+	        width: 65%;
+	    }
+	    .radio_inline label{
+
+	        width: 20%;
+	        padding-left: 40px;
+	        padding-right: 40px;
+	    }
+	    .radio_inline input[type=radio]{
+	        width: 15%;
+	        right: auto;
+	    }
+
+
+	    /*//换个样式*/
+	   .change .mui-radio input[type='radio']:checked:before{
+	    content:'\e442';
+	    color:red;
+	    }
