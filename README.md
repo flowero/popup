@@ -6,4 +6,4 @@
 # 1.2: mui包括：css, font, js三个文件夹。qr.png替换成你需要的二维码。
 
 
-# 2.1: to be continued...
+# 2.1: 弹框效果右上角的X符号，是mui-icon,可以修改其外观。
